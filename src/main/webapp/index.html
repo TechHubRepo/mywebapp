@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Index | MyWebApp</title>
+	<style>
+		a:link,
+		a:visited {
+			background-color: rgb(53, 132, 228);
+			color: white;
+			padding: 14px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+		}
+
+		a:hover,
+		a:active {
+			background-color: rgb(255, 120, 0);
+		}
+	</style>
+</head>
+
+<body>
+	<div align="center">
+		<h1>*****************************</h1>
+		<h1>MY WEB APP</h1>
+		<h1>*****************************</h1>
+		<h1 th:text="${'Version = '+version}"></h1>
+		<hr />
+		<h1><b>Server Information<b></h1>
+		<table style="color: rgb(255, 120, 0); font-size: xx-large;">
+			<tr>
+				<td>Host Name = </td>
+				<td th:text="${host_name}"></td>
+			</tr>
+			<tr>
+				<td>Host IP Address =</td>
+				<td th:text="${host_ip}"></td>
+			</tr>
+		</table>
+		<hr />
+		<h2>WELCOME TO TECHHUB</h2>
+		<h2>PLEASE SUBSCRIBE MY YOUTUBE CHANNEL</h2>
+		<a href="/show-another">Show another page</a>
+	</div>
+</body>
+
+</html>
