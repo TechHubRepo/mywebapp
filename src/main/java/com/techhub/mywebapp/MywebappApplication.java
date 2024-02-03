@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MywebappApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		System.out.println("**************************");
 		System.out.println("******** NAMASKAR ********");
 		System.out.println("**************************");
